@@ -15,9 +15,12 @@ app.post("/api/contact", (req, res) => {
   res.status(200).json({ message: "Message received" });
 });
 app.get("/", (req, res) => {
-    res.send("Backend is running 🎉");
-  });
+  res.send("Backend is running 🎉");
+});
 // Server listen
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+console.log(await response.text());
+console.log(response.status);
